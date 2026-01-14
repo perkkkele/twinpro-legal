@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Términos de Servicio y Política de Privacidad de TwinPro">
+    <title>Términos y Condiciones | TwinPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f9f506;
+            --primary-dark: #e5e105;
+            --black: #111111;
+            --gray-900: #1f1f1f;
+            --gray-800: #2a2a2a;
+            --gray-600: #6b7280;
+            --gray-400: #9ca3af;
+            --gray-200: #e5e7eb;
+            --gray-100: #f3f4f6;
+            --white: #fff;
+            --background: #f8f8f5
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--background);
+            color: var(--black);
+            line-height: 1.7;
+            font-size: 16px
+        }
+
+        header {
+            background: var(--black);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .3)
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--white)
+        }
+
+        .logo-text span {
+            color: var(--primary)
+        }
+
+        .header-link {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color .2s
+        }
+
+        .header-link:hover {
+            color: var(--primary)
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--black) 0%, var(--gray-900) 100%);
+            padding: 60px 24px;
+            text-align: center
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 800;
+            margin-bottom: 16px
+        }
+
+        .hero h1 span {
+            color: var(--primary)
+        }
+
+        .hero-subtitle {
+            color: var(--gray-400);
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px
+        }
+
+        .update-badge {
+            background: var(--gray-800);
+            color: var(--gray-400);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .update-badge svg {
+            width: 14px;
+            height: 14px
+        }
+
+        .nav-tabs {
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            position: sticky;
+            top: 72px;
+            z-index: 99
+        }
+
+        .nav-tabs-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            gap: 4px;
+            overflow-x: auto
+        }
+
+        .nav-tab {
+            padding: 16px 20px;
+            color: var(--gray-600);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+            transition: all .2s
+        }
+
+        .nav-tab:hover {
+            color: var(--black)
+        }
+
+        .nav-tab.active {
+            color: var(--black);
+            border-bottom-color: var(--primary)
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px
+        }
+
+        .document-section {
+            display: none
+        }
+
+        .document-section.active {
+            display: block
+        }
+
+        section {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .04)
+        }
+
+        section h2 {
+            color: var(--black);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        section h2::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: var(--primary);
+            border-radius: 2px
+        }
+
+        section h3 {
+            color: var(--gray-800);
+            font-size: 16px;
+            font-weight: 600;
+            margin: 24px 0 12px
+        }
+
+        section p {
+            color: var(--gray-600);
+            margin-bottom: 16px
+        }
+
+        section ul,
+        section ol {
+            list-style: none;
+            margin: 16px 0
+        }
+
+        section ul li,
+        section ol li {
+            color: var(--gray-600);
+            padding: 8px 0 8px 28px;
+            position: relative
+        }
+
+        section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%
+        }
+
+        section ol {
+            counter-reset: item
+        }
+
+        section ol li::before {
+            content: counter(item) ".";
+            counter-increment: item;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            color: var(--primary);
+            font-weight: 600
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0
+        }
+
+        .info-box p {
+            color: var(--gray-800);
+            margin: 0;
+            font-size: 14px
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px
+        }
+
+        table th {
+            background: var(--gray-100);
+            color: var(--black);
+            font-weight: 600;
+            text-align: left;
+            padding: 14px 16px
+        }
+
+        table th:first-child {
+            border-radius: 8px 0 0 0
+        }
+
+        table th:last-child {
+            border-radius: 0 8px 0 0
+        }
+
+        table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--gray-200);
+            color: var(--gray-600)
+        }
+
+        table tr:last-child td {
+            border-bottom: none
+        }
+
+        .contact-box {
+            background: var(--black);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+            text-align: center
+        }
+
+        .contact-box p {
+            color: var(--gray-400);
+            margin-bottom: 12px;
+            font-size: 14px
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline
+        }
+
+        a {
+            color: var(--primary-dark);
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        .disclaimer-card {
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0
+        }
+
+        .disclaimer-card h4 {
+            color: var(--black);
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px
+        }
+
+        .disclaimer-card p {
+            color: var(--gray-600);
+            font-size: 14px;
+            margin: 0
+        }
+
+        .warning-box {
+            background: #FEF2F2;
+            border-left: 4px solid #EF4444;
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0
+        }
+
+        .warning-box p {
+            color: #991B1B;
+            margin: 0;
+            font-size: 14px
+        }
+
+        footer {
+            background: var(--black);
+            padding: 40px 24px;
+            text-align: center
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 16px
+        }
+
+        .footer-logo .logo-icon {
+            width: 36px;
+            height: 36px
+        }
+
+        .footer-logo .logo-text {
+            font-size: 20px
+        }
+
+        footer p {
+            color: var(--gray-600);
+            font-size: 14px
+        }
+
+        footer nav {
+            margin-top: 20px
+        }
+
+        footer nav a {
+            color: var(--gray-400);
+            margin: 0 16px;
+            font-size: 14px
+        }
+
+        footer nav a:hover {
+            color: var(--primary)
+        }
+
+        @media(max-width:640px) {
+            section {
+                padding: 24px 20px
+            }
+
+            section h2 {
+                font-size: 18px
+            }
+
+            .hero {
+                padding: 40px 20px
+            }
+
+            main {
+                padding: 24px 16px
+            }
+
+            .nav-tab {
+                padding: 12px 16px;
+                font-size: 13px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content"><a href="https://twinpro.app" class="logo"><img src="twinpro-logo.png" alt="TwinPro"
+                    class="logo-icon">
+                <div class="logo-text">Twin<span>Pro</span></div>
+            </a><a href="https://twinpro.app" class="header-link">← Volver a TwinPro</a></div>
+    </header>
+    <div class="hero">
+        <h1>Términos y <span>Condiciones</span></h1>
+        <div class="hero-subtitle"><span class="update-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>Última actualización: 14 de enero de 2026</span></div>
+    </div>
+    <nav class="nav-tabs">
+        <div class="nav-tabs-content"><a href="#privacy" class="nav-tab active" data-section="privacy">Privacidad</a><a
+                href="#privacy-pro" class="nav-tab" data-section="privacy-pro">Anexo Profesionales</a><a href="#terms"
+                class="nav-tab" data-section="terms">Términos de Servicio</a><a href="#terms-pro" class="nav-tab"
+                data-section="terms-pro">Anexo Profesionales</a><a href="#disclaimers" class="nav-tab"
+                data-section="disclaimers">Avisos Legales</a><a href="#cookies" class="nav-tab"
+                data-section="cookies">Cookies</a></div>
+    </nav>
+    <main>
+        <div id="privacy" class="document-section active">
+            <section>
+                <h2>1. Responsable del tratamiento</h2>
+                <ul>
+                    <li><strong>Responsable:</strong> TwinPro S.L.U</li>
+                    <li><strong>Domicilio social:</strong> Calle Palma, 10 Ciudad Real (Spain)</li>
+                    <li><strong>Correo electrónico:</strong> <a href="mailto:legal@twinpro.app">legal@twinpro.app</a>
+                    </li>
+                    <li><strong>Sitio web:</strong> <a href="https://twinpro.app">https://twinpro.app</a></li>
+                </ul>
+                <div class="info-box">
+                    <p>TwinPro actúa como responsable del tratamiento de los datos personales tratados a través de la
+                        aplicación móvil, el sitio web, widgets web, códigos QR y cualquier otro canal vinculado a la
+                        Plataforma (en adelante, los "Servicios").</p>
+                </div>
+            </section>
+            <section>
+                <h2>2. Ámbito de aplicación</h2>
+                <p>Esta Política se aplica a:</p>
+                <ul>
+                    <li>Usuarios particulares</li>
+                    <li>Usuarios profesionales</li>
+                    <li>Interacciones con gemelos digitales basados en IA</li>
+                    <li>Uso de chats, videollamadas, agenda, pagos, widgets, QR y directorio</li>
+                    <li>Visitantes del sitio web</li>
+                </ul>
+            </section>
+            <section>
+                <h2>3. Tipos de datos tratados</h2>
+                <h3>3.1 Datos facilitados directamente por el usuario</h3>
+                <ul>
+                    <li>Nombre y apellidos</li>
+                    <li>Dirección de correo electrónico</li>
+                    <li>Número de teléfono</li>
+                    <li>Foto de perfil</li>
+                    <li>Información profesional (especialidad, descripción, tarifas, disponibilidad)</li>
+                    <li>Contenido de mensajes y conversaciones</li>
+                    <li>Datos necesarios para pagos y facturación (gestionados por terceros)</li>
+                </ul>
+                <h3>3.2 Datos recopilados automáticamente</h3>
+                <ul>
+                    <li>Dirección IP</li>
+                    <li>Identificadores de dispositivo</li>
+                    <li>Sistema operativo y navegador</li>
+                    <li>Datos de uso de la aplicación</li>
+                    <li>Geolocalización aproximada</li>
+                    <li>Identificadores de sesión y métricas técnicas</li>
+                </ul>
+                <h3>3.3 Datos de terceros</h3>
+                <ul>
+                    <li>Proveedores de autenticación (Google, Apple u otros)</li>
+                    <li>Proveedores de pago</li>
+                    <li>Proveedores tecnológicos de infraestructura, videollamadas y mensajería</li>
+                </ul>
+            </section>
+            <section>
+                <h2>4. Finalidades del tratamiento</h2>
+                <p>Los datos se tratan para:</p>
+                <ol>
+                    <li>Prestar los Servicios de TwinPro</li>
+                    <li>Gestionar cuentas de usuario y profesionales</li>
+                    <li>Facilitar interacciones con gemelos digitales</li>
+                    <li>Permitir chats, videollamadas y citas</li>
+                    <li>Gestionar pagos, créditos y suscripciones</li>
+                    <li>Mejorar la calidad del servicio</li>
+                    <li>Entrenar y mejorar sistemas de IA de forma agregada y anonimizada</li>
+                    <li>Garantizar la seguridad y prevenir fraudes</li>
+                    <li>Cumplir obligaciones legales</li>
+                </ol>
+            </section>
+            <section>
+                <h2>5. Base legal del tratamiento</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Finalidad</th>
+                                <th>Base legal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Prestación del servicio</td>
+                                <td>Ejecución de contrato</td>
+                            </tr>
+                            <tr>
+                                <td>Gestión de cuentas</td>
+                                <td>Ejecución de contrato</td>
+                            </tr>
+                            <tr>
+                                <td>Mejora del servicio e IA</td>
+                                <td>Interés legítimo</td>
+                            </tr>
+                            <tr>
+                                <td>Comunicaciones informativas</td>
+                                <td>Interés legítimo</td>
+                            </tr>
+                            <tr>
+                                <td>Comunicaciones comerciales</td>
+                                <td>Consentimiento</td>
+                            </tr>
+                            <tr>
+                                <td>Cumplimiento normativo</td>
+                                <td>Obligación legal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <h2>6. Inteligencia artificial y gemelos digitales</h2>
+                <ul>
+                    <li>TwinPro utiliza sistemas de inteligencia artificial para generar respuestas informativas</li>
+                    <li>Los gemelos digitales no sustituyen asesoramiento profesional humano</li>
+                    <li>No se toman decisiones automatizadas con efectos legales o equivalentes</li>
+                    <li>El usuario acepta que las respuestas pueden ser inexactas, incompletas o desactualizadas</li>
+                </ul>
+            </section>
+            <section>
+                <h2>7. Videollamadas y comunicaciones</h2>
+                <ul>
+                    <li>Las videollamadas y llamadas pueden ser gestionadas por proveedores tecnológicos externos</li>
+                    <li>No se graban por defecto, salvo indicación expresa y consentimiento</li>
+                    <li>TwinPro no controla el contenido de las comunicaciones entre usuarios</li>
+                </ul>
+            </section>
+            <section>
+                <h2>8. Widgets web, enlaces públicos y códigos QR</h2>
+                <p>Cuando un profesional utiliza widgets web, enlaces públicos o códigos QR:</p>
+                <ul>
+                    <li>Actúa como responsable independiente del tratamiento de los datos recogidos desde esos canales
+                    </li>
+                    <li>TwinPro actúa como proveedor tecnológico e intermediario</li>
+                </ul>
+            </section>
+            <section>
+                <h2>9. Destinatarios de los datos</h2>
+                <p>Los datos pueden compartirse con:</p>
+                <ul>
+                    <li>Proveedores tecnológicos y de alojamiento</li>
+                    <li>Proveedores de pago</li>
+                    <li>Proveedores de videollamadas y mensajería</li>
+                    <li>Autoridades públicas cuando exista obligación legal</li>
+                </ul>
+                <div class="info-box">
+                    <p><strong>TwinPro no vende datos personales.</strong></p>
+                </div>
+            </section>
+            <section>
+                <h2>10. Transferencias internacionales</h2>
+                <p>Algunos proveedores pueden estar ubicados fuera del Espacio Económico Europeo. En esos casos, TwinPro
+                    garantiza la aplicación de:</p>
+                <ul>
+                    <li>Cláusulas Contractuales Tipo (SCC)</li>
+                    <li>Mecanismos de protección reconocidos por la Comisión Europea</li>
+                </ul>
+            </section>
+            <section>
+                <h2>11. Plazos de conservación</h2>
+                <ul>
+                    <li><strong>Datos de cuenta:</strong> mientras la cuenta esté activa</li>
+                    <li><strong>Datos de facturación:</strong> según normativa fiscal</li>
+                    <li><strong>Conversaciones:</strong> mientras sea necesario para la prestación del servicio y mejora
+                    </li>
+                    <li><strong>Datos anonimizados:</strong> sin límite temporal</li>
+                </ul>
+            </section>
+            <section>
+                <h2>12. Derechos del usuario</h2>
+                <p>El usuario puede ejercer los derechos de:</p>
+                <ul>
+                    <li>Acceso, Rectificación, Supresión, Oposición, Limitación, Portabilidad y Retirada del
+                        consentimiento</li>
+                </ul>
+                <div class="contact-box">
+                    <p>📩 Solicitudes:</p><a href="mailto:legal@twinpro.app">legal@twinpro.app</a>
+                </div>
+                <p>También puede presentar reclamación ante la <a href="https://www.aepd.es" target="_blank">Agencia
+                        Española de Protección de Datos (AEPD)</a>.</p>
+            </section>
+            <section>
+                <h2>13. Menores de edad</h2>
+                <ul>
+                    <li>TwinPro no está destinado a menores de 16 años</li>
+                    <li>No se recopilan intencionadamente datos de menores</li>
+                </ul>
+            </section>
+            <section>
+                <h2>14. Seguridad</h2>
+                <p>TwinPro aplica medidas técnicas y organizativas de nivel industrial:</p>
+                <ul>
+                    <li>Cifrado</li>
+                    <li>Control de accesos</li>
+                    <li>Sistemas de detección de incidentes</li>
+                    <li>Auditorías internas</li>
+                </ul>
+            </section>
+            <section>
+                <h2>15. Modificaciones</h2>
+                <p>TwinPro podrá actualizar esta Política de Privacidad para adaptarla a cambios legislativos, técnicos
+                    o de funcionamiento del Servicio. El uso continuado de los Servicios implica la aceptación de la
+                    versión vigente.</p>
+                <p>Las modificaciones no sustanciales podrán aplicarse sin previo aviso. En caso de cambios relevantes,
+                    TwinPro informará al usuario de forma clara y accesible.</p>
+            </section>
+        </div>
+        <div id="privacy-pro" class="document-section">
+            <section>
+                <h2>Anexo I: Tratamiento de Datos de Profesionales</h2>
+                <p>Este documento detalla las condiciones específicas bajo las cuales TwinPro trata los datos de los
+                    profesionales que utilizan la plataforma para ofrecer sus servicios.</p>
+            </section>
+            <section>
+                <h2>1. Categorías de Datos Tratados</h2>
+                <ul>
+                    <li><strong>Datos Identificativos:</strong> Nombre, apellidos, NIF/DNI o número de identificación
+                        profesional</li>
+                    <li><strong>Datos de Contacto:</strong> Correo electrónico, número de teléfono, dirección
+                        profesional</li>
+                    <li><strong>Información Profesional:</strong> Especialidad, formación, experiencia, certificaciones
+                    </li>
+                    <li><strong>Imagen de Perfil:</strong> Fotografía o vídeo para personalización del perfil y gemelo
+                        digital</li>
+                    <li><strong>Información de Agenda:</strong> Disponibilidad horaria, fechas de citas</li>
+                    <li><strong>Contenido de Comunicaciones:</strong> Mensajes e interacciones en la plataforma</li>
+                    <li><strong>Datos Económicos:</strong> Información bancaria (gestionada por proveedores externos)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>2. Finalidades Específicas</h2>
+                <ol>
+                    <li><strong>Gestión de Perfil:</strong> Crear y administrar la cuenta del profesional</li>
+                    <li><strong>Visibilidad:</strong> Mostrar información profesional a usuarios interesados</li>
+                    <li><strong>Interacción Digital:</strong> Facilitar comunicación mediante gemelos digitales</li>
+                    <li><strong>Operaciones:</strong> Gestionar reservas y procesamiento de pagos</li>
+                    <li><strong>Herramientas de Difusión:</strong> Permitir uso de widgets, códigos QR y enlaces
+                        públicos</li>
+                    <li><strong>Cumplimiento:</strong> Atender obligaciones legales y fiscales</li>
+                </ol>
+            </section>
+            <section>
+                <h2>3. Base Legal del Tratamiento</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Finalidad</th>
+                                <th>Base Legal (RGPD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Prestación del servicio</td>
+                                <td>Ejecución de contrato</td>
+                            </tr>
+                            <tr>
+                                <td>Publicación de perfil y gemelo</td>
+                                <td>Consentimiento</td>
+                            </tr>
+                            <tr>
+                                <td>Comunicaciones técnicas</td>
+                                <td>Interés legítimo</td>
+                            </tr>
+                            <tr>
+                                <td>Prevención de fraude</td>
+                                <td>Obligación legal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <h2>4. Roles de Tratamiento (RGPD)</h2>
+                <ul>
+                    <li><strong>TwinPro como Responsable:</strong> Gestión de cuenta y plataforma</li>
+                    <li><strong>TwinPro como Encargado:</strong> Tratamiento de datos de clientes siguiendo
+                        instrucciones del profesional</li>
+                    <li><strong>Profesional como Responsable Independiente:</strong> Datos captados mediante
+                        herramientas externas (widgets, QR, enlaces)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>5. Visibilidad y Control de Datos</h2>
+                <ul>
+                    <li><strong>Configuración de Privacidad:</strong> El profesional define qué datos son públicos o
+                        privados</li>
+                    <li><strong>Exención:</strong> TwinPro no se responsabiliza del uso de datos voluntariamente
+                        publicados</li>
+                </ul>
+            </section>
+            <section>
+                <h2>6. Conservación de Datos</h2>
+                <ul>
+                    <li><strong>Datos Activos:</strong> Mientras la cuenta permanezca activa</li>
+                    <li><strong>Bloqueo Legal:</strong> Tras la baja, durante plazos de prescripción legal</li>
+                    <li><strong>Anonimización:</strong> Datos estadísticos sin límite temporal</li>
+                </ul>
+            </section>
+            <section>
+                <h2>7. Derechos del Profesional</h2>
+                <p>El profesional puede ejercer: Acceso, Rectificación, Supresión, Oposición, Limitación y Portabilidad.
+                </p>
+                <div class="contact-box">
+                    <p>📩 Contacto:</p><a href="mailto:legal@twinpro.app">legal@twinpro.app</a>
+                </div>
+            </section>
+            <section>
+                <h2>8-10. Transferencias, Seguridad y Responsabilidad</h2>
+                <ul>
+                    <li>Transferencias internacionales bajo mecanismos de garantía (SCC)</li>
+                    <li>Medidas técnicas: cifrado, firewalls, políticas de acceso restringido</li>
+                    <li>El profesional se compromete a cumplir RGPD e informar a sus clientes</li>
+                </ul>
+            </section>
+        </div>
+        <div id="terms" class="document-section">
+            <section>
+                <h2>Términos de Servicio de TwinPro</h2>
+                <p>Bienvenido a TwinPro. Los presentes Términos de Servicio constituyen un contrato legalmente
+                    vinculante entre usted y TwinPro. Al acceder o utilizar nuestros servicios, acepta estar sujeto a
+                    estas cláusulas.</p>
+            </section>
+            <section>
+                <h2>1. Naturaleza del Servicio</h2>
+                <p>TwinPro es una plataforma tecnológica de intermediación que facilita:</p>
+                <ul>
+                    <li>Comunicación directa entre usuarios y profesionales</li>
+                    <li>Desarrollo y uso de gemelos digitales basados en IA</li>
+                    <li>Herramientas de interacción: chats, videollamadas, gestión de agenda</li>
+                    <li>Marketplace para oferta y contratación de servicios profesionales</li>
+                </ul>
+                <div class="warning-box">
+                    <p><strong>Aviso importante:</strong> TwinPro no es una firma de servicios profesionales. No presta
+                        servicios médicos, legales, psicológicos, financieros ni de ningún otro sector regulado. Nuestra
+                        función se limita a la provisión de infraestructura tecnológica.</p>
+                </div>
+            </section>
+            <section>
+                <h2>2. Registro y Seguridad de la Cuenta</h2>
+                <ul>
+                    <li><strong>Veracidad:</strong> El usuario se compromete a proporcionar información exacta, actual y
+                        completa</li>
+                    <li><strong>Responsabilidad:</strong> Usted es responsable de mantener la confidencialidad de sus
+                        credenciales</li>
+                    <li><strong>Suspensión:</strong> TwinPro puede suspender cuentas con datos falsos o uso indebido
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>3. Gemelos Digitales e Inteligencia Artificial</h2>
+                <ul>
+                    <li><strong>Carácter informativo:</strong> Todo contenido generado tiene finalidad exclusivamente
+                        informativa</li>
+                    <li><strong>Margen de error:</strong> La IA puede generar respuestas inexactas, incompletas o
+                        erróneas</li>
+                    <li><strong>Responsabilidad:</strong> El uso de información del gemelo digital es bajo cuenta y
+                        riesgo del usuario</li>
+                </ul>
+            </section>
+            <section>
+                <h2>4. Rol y Responsabilidad de los Profesionales</h2>
+                <p>Los profesionales actúan de forma independiente. Son responsables exclusivos de:</p>
+                <ul>
+                    <li>Veracidad de su perfil y certificaciones</li>
+                    <li>Supervisión y configuración de sus gemelos digitales</li>
+                    <li>Cumplimiento de normativa de su sector profesional</li>
+                    <li>Calidad y resultado de la atención directa</li>
+                </ul>
+            </section>
+            <section>
+                <h2>5. Escalado Humano y Disponibilidad</h2>
+                <p>TwinPro facilita el contacto pero no garantiza disponibilidad inmediata del profesional. Los tiempos
+                    de respuesta dependen del criterio y agenda del profesional.</p>
+            </section>
+            <section>
+                <h2>6. Citas, Agenda y Cancelaciones</h2>
+                <p>La Plataforma ofrece herramientas de gestión de citas. Cualquier acuerdo de cancelación,
+                    reprogramación o reembolso se rige por la política del profesional o acuerdo mutuo.</p>
+            </section>
+            <section>
+                <h2>7. Marketplace, Pagos y Suscripciones</h2>
+                <ul>
+                    <li><strong>Tarifas:</strong> Algunos servicios requieren pago de tarifas o suscripciones</li>
+                    <li><strong>Renovación:</strong> Suscripciones se renuevan automáticamente salvo cancelación</li>
+                    <li><strong>Reembolsos:</strong> Los pagos no son reembolsables salvo obligación legal</li>
+                    <li><strong>Comisiones:</strong> TwinPro puede aplicar comisiones de servicio</li>
+                </ul>
+            </section>
+            <section>
+                <h2>8. Conducta Prohibida</h2>
+                <p>Queda terminantemente prohibido:</p>
+                <ul>
+                    <li>Suplantación de identidad</li>
+                    <li>Uso para fines fraudulentos o ilícitos</li>
+                    <li>Publicación de contenido ilegal, abusivo o que incite al odio</li>
+                    <li>Entrenamiento de modelos externos mediante ingeniería inversa</li>
+                    <li>Infracción de derechos de propiedad intelectual</li>
+                </ul>
+            </section>
+            <section>
+                <h2>9. Moderación y Suspensión</h2>
+                <p>TwinPro puede moderar contenido, retirar publicaciones, limitar visibilidad de perfiles o suspender
+                    acceso por violación de estos términos.</p>
+            </section>
+            <section>
+                <h2>10. Reseñas y Rankings</h2>
+                <p>Las valoraciones reflejan opinión de usuarios. TwinPro no verifica la veracidad de testimonios ni
+                    garantiza que los rankings representen certificación de calidad oficial.</p>
+            </section>
+            <section>
+                <h2>11. Propiedad Intelectual</h2>
+                <ul>
+                    <li><strong>Contenido del Usuario:</strong> Conserva propiedad y concede licencia mundial no
+                        exclusiva a TwinPro</li>
+                    <li><strong>Propiedad de TwinPro:</strong> Software, arquitectura IA, marcas, logotipos y diseños
+                        son propiedad exclusiva de TwinPro</li>
+                </ul>
+            </section>
+            <section>
+                <h2>12. Limitación de Responsabilidad</h2>
+                <p>En la medida máxima permitida por la ley, TwinPro no será responsable por:</p>
+                <ul>
+                    <li>Decisiones basadas en respuestas de la IA</li>
+                    <li>Conflictos entre usuarios y profesionales</li>
+                    <li>Daños indirectos, lucro cesante o pérdida de oportunidades</li>
+                </ul>
+            </section>
+            <section>
+                <h2>13. Legislación y Jurisdicción</h2>
+                <ul>
+                    <li><strong>Usuarios UE:</strong> Legislación del país de residencia</li>
+                    <li><strong>Resto del mundo:</strong> Legislación de España</li>
+                    <li><strong>Disputas:</strong> Tribunales competentes según normativa de consumidores</li>
+                </ul>
+            </section>
+            <section>
+                <h2>14. Terminación</h2>
+                <p>Usted puede dejar de usar el servicio en cualquier momento. TwinPro puede resolver el contrato por
+                    incumplimientos graves o cese de operación.</p>
+            </section>
+            <section>
+                <h2>15. Modificaciones</h2>
+                <p>TwinPro puede actualizar estos términos. Notificaremos cambios sustanciales. El uso continuado
+                    implica aceptación.</p>
+                <div class="contact-box">
+                    <p>Si tiene preguntas, contacte:</p><a href="mailto:legal@twinpro.app">legal@twinpro.app</a>
+                </div>
+            </section>
+        </div>
+        <div id="terms-pro" class="document-section">
+            <section>
+                <h2>Anexo I: Condiciones Específicas para Profesionales</h2>
+                <div class="info-box">
+                    <p><strong>📌 Resumen:</strong> Responsabilidad Total • Gemelo Digital supervisado • Independencia
+                        laboral • Cumplimiento de licencias • Gestión propia de fiscalidad</p>
+                </div>
+            </section>
+            <section>
+                <h2>1. Objeto del Anexo</h2>
+                <p>Regula las condiciones para profesionales que ofrecen servicios mediante gemelos digitales o atención
+                    directa en TwinPro. Es parte vinculante de los Términos de Servicio.</p>
+            </section>
+            <section>
+                <h2>2. Rol de TwinPro y del Profesional</h2>
+                <ul>
+                    <li><strong>TwinPro:</strong> Proveedor de herramientas de comunicación y automatización</li>
+                    <li><strong>Profesional:</strong> Único responsable de servicios, contenidos y cumplimiento
+                        normativo</li>
+                    <li><strong>Relación:</strong> Inexistencia de vínculo laboral o de agencia</li>
+                </ul>
+            </section>
+            <section>
+                <h2>3. Veracidad de la Información</h2>
+                <p>El profesional debe facilitar datos veraces, actualizados y no engañosos. TwinPro no realiza
+                    verificaciones exhaustivas.</p>
+            </section>
+            <section>
+                <h2>4. Uso del Gemelo Digital</h2>
+                <ul>
+                    <li><strong>Supervisión:</strong> El profesional debe configurar y vigilar su IA</li>
+                    <li><strong>Limitaciones:</strong> La IA puede fallar; no usar para asesoramiento crítico sin
+                        supervisión</li>
+                    <li><strong>Prohibiciones:</strong> No usar para suplantación o simulación de títulos inexistentes
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>5. Normativa Sectorial</h2>
+                <p>El profesional garantiza cumplimiento de leyes de su sector y posesión de habilitaciones necesarias.
+                    TwinPro se exime de responsabilidad en este ámbito.</p>
+            </section>
+            <section>
+                <h2>6. Citas y Disponibilidad</h2>
+                <p>La gestión de horarios, asistencias y cancelaciones recae sobre el profesional. TwinPro no asegura
+                    resultados ni disponibilidad efectiva.</p>
+            </section>
+            <section>
+                <h2>7. Pagos y Facturación</h2>
+                <p>TwinPro puede cobrar comisiones. El profesional gestiona independientemente su fiscalidad y
+                    obligaciones tributarias.</p>
+            </section>
+            <section>
+                <h2>8. Herramientas Externas</h2>
+                <p>Al usar widgets, QR o enlaces, el profesional actúa como responsable independiente del tratamiento de
+                    datos. TwinPro solo provee la tecnología.</p>
+            </section>
+            <section>
+                <h2>9-11. Reseñas, Suspensión y Responsabilidad</h2>
+                <ul>
+                    <li>El perfil puede ser valorado por usuarios. TwinPro puede moderar comentarios</li>
+                    <li>La cuenta puede cerrarse por incumplimiento, fraude o reclamaciones fundadas</li>
+                    <li>TwinPro no responde por daños de la actividad profesional</li>
+                </ul>
+            </section>
+        </div>
+        <div id="disclaimers" class="document-section">
+            <section>
+                <h2>Avisos Legales</h2>
+                <p>Condiciones legales, responsabilidades y limitaciones de uso de TwinPro. El uso implica la aceptación
+                    de estos términos.</p>
+            </section>
+            <section>
+                <h2>1. Aviso Legal General</h2>
+                <ul>
+                    <li><strong>Naturaleza:</strong> TwinPro no presta servicios profesionales ni sustituye atención
+                        humana directa</li>
+                    <li><strong>Información:</strong> Tiene carácter meramente informativo y orientativo</li>
+                    <li><strong>Garantías:</strong> TwinPro no garantiza exactitud, integridad o actualidad de los
+                        contenidos</li>
+                    <li><strong>Responsabilidad:</strong> El uso se realiza bajo responsabilidad del usuario</li>
+                </ul>
+            </section>
+            <section>
+                <h2>2. Aviso de Gemelos Digitales</h2>
+                <div class="warning-box">
+                    <p><strong>IMPORTANTE:</strong> Las respuestas de los gemelos digitales son generadas por IA y
+                        pueden ser inexactas, incompletas, desactualizadas o incorrectas.</p>
+                </div>
+                <ul>
+                    <li>No sustituyen asesoramiento, diagnóstico o intervención de un profesional humano cualificado
+                    </li>
+                    <li>El usuario no debe basar decisiones exclusivamente en información del gemelo digital</li>
+                </ul>
+            </section>
+            <section>
+                <h2>3. Disclaimers por Sector</h2>
+                <div class="disclaimer-card">
+                    <h4>⚖️ Legal – Abogados, Notarios</h4>
+                    <p>La información no constituye asesoramiento legal ni dictamen jurídico vinculante. Consulte con un
+                        abogado cualificado para cuestiones legales concretas.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🏥 Salud – Médicos, Enfermeros, Psicólogos</h4>
+                    <p>No constituye diagnóstico médico, tratamiento ni prescripción. Consulte con un profesional
+                        sanitario. En urgencias, acuda a servicios de emergencia.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🔧 Hogar – Electricistas, Fontaneros, Carpinteros</h4>
+                    <p>Información orientativa que no sustituye evaluación presencial. TwinPro no se responsabiliza de
+                        daños derivados.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🎓 Educación – Profesores, Tutores</h4>
+                    <p>Contenidos educativos. TwinPro no garantiza resultados académicos ni sustituye procesos
+                        educativos formales.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>💪 Fitness – Entrenadores Personales</h4>
+                    <p>Información orientativa. Consulte con un profesional antes de iniciar cualquier programa de
+                        ejercicio.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>💻 Tecnología – Programadores, Ingenieros</h4>
+                    <p>La información técnica puede contener errores. TwinPro no se responsabiliza de pérdidas de datos
+                        o brechas de seguridad.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>💰 Finanzas – Contables, Asesores</h4>
+                    <p>No constituye asesoramiento financiero, fiscal ni de inversión. Consulte con un asesor
+                        cualificado.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>💇 Belleza – Peluqueros, Estilistas</h4>
+                    <p>Recomendaciones estéticas orientativas. TwinPro no se responsabiliza de reacciones adversas.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🐾 Mascotas – Veterinarios</h4>
+                    <p>No sustituye consulta veterinaria presencial. Ante problemas de salud animal, acuda a un
+                        veterinario colegiado.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🎉 Eventos – Organizadores</h4>
+                    <p>Recomendaciones sujetas a factores externos. TwinPro no garantiza disponibilidad de proveedores
+                        ni éxito del evento.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🚗 Transporte – Conductores</h4>
+                    <p>Información orientativa. TwinPro no se responsabiliza de retrasos, cancelaciones o incidentes.
+                    </p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🎨 Arte – Diseñadores, Fotógrafos</h4>
+                    <p>Sugerencias creativas subjetivas. TwinPro no se responsabiliza del uso final ni de infracciones
+                        de derechos.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🌿 Bienestar – Coaches, Terapeutas</h4>
+                    <p>No sustituye atención psicológica o terapéutica regulada. Busque ayuda profesional cuando sea
+                        necesario.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>🏠 Inmobiliario – Agentes</h4>
+                    <p>No constituye asesoramiento legal ni financiero. Las operaciones deben ser revisadas por
+                        profesionales cualificados.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>👔 Empleo – Reclutadores</h4>
+                    <p>Información orientativa. TwinPro no garantiza obtención de empleo ni idoneidad de candidatos.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>⚡ Energía – Técnicos</h4>
+                    <p>Recomendaciones orientativas. TwinPro no se responsabiliza de instalaciones sin evaluación
+                        profesional presencial.</p>
+                </div>
+            </section>
+        </div>
+        <div id="cookies" class="document-section">
+            <section>
+                <h2>Política de Cookies de TwinPro</h2>
+                <p>Última actualización: 14 de enero de 2026</p>
+            </section>
+            <section>
+                <h2>1. ¿Qué son las cookies?</h2>
+                <p>Pequeños archivos de texto almacenados en el dispositivo del usuario para garantizar el correcto
+                    funcionamiento del servicio, mejorar la experiencia y recopilar información estadística.</p>
+                <p>En TwinPro también se utilizan tecnologías similares (SDKs, identificadores, píxeles) que se
+                    consideran equivalentes a cookies.</p>
+            </section>
+            <section>
+                <h2>2. Responsable</h2>
+                <ul>
+                    <li><strong>Responsable:</strong> TwinPro S.L.U</li>
+                    <li><strong>Contacto:</strong> <a href="mailto:legal@twinpro.app">legal@twinpro.app</a></li>
+                    <li><strong>Web:</strong> <a href="https://twinpro.app">https://twinpro.app</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>3. ¿Dónde se utilizan?</h2>
+                <ul>
+                    <li>Sitio web oficial de TwinPro</li>
+                    <li>Widgets web embebidos</li>
+                    <li>Paneles de acceso (Dashboard)</li>
+                    <li>Páginas públicas de perfiles profesionales</li>
+                    <li>Enlaces de códigos QR</li>
+                </ul>
+                <div class="info-box">
+                    <p><strong>⚠️ App móvil:</strong> No se usan cookies tradicionales, pero sí SDKs e identificadores
+                        de dispositivo con funciones análogas.</p>
+                </div>
+            </section>
+            <section>
+                <h2>4. Tipos de cookies</h2>
+                <h3>4.1 Cookies técnicas (necesarias)</h3>
+                <p>Imprescindibles para el funcionamiento básico. No requieren consentimiento. Ej: sesión,
+                    autenticación, seguridad.</p>
+                <h3>4.2 Cookies de personalización</h3>
+                <p>Recuerdan preferencias del usuario. Ej: idioma, configuración regional.</p>
+                <h3>4.3 Cookies analíticas</h3>
+                <p>Seguimiento y análisis de comportamiento. Requieren consentimiento. Ej: Google Analytics, Firebase.
+                </p>
+                <h3>4.4 Cookies de terceros</h3>
+                <p>Enviadas desde dominios externos. Ej: Stripe (pagos), proveedores de infraestructura.</p>
+            </section>
+            <section>
+                <h2>5. Tecnologías utilizadas</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Proveedor</th>
+                                <th>Tipo</th>
+                                <th>Finalidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TwinPro</td>
+                                <td>Técnica</td>
+                                <td>Autenticación, sesión, seguridad</td>
+                            </tr>
+                            <tr>
+                                <td>Google/Firebase</td>
+                                <td>Analítica</td>
+                                <td>Métricas de uso y estadísticas</td>
+                            </tr>
+                            <tr>
+                                <td>Stripe</td>
+                                <td>Técnica</td>
+                                <td>Procesamiento de pagos</td>
+                            </tr>
+                            <tr>
+                                <td>Cloud Providers</td>
+                                <td>Técnica</td>
+                                <td>Rendimiento y CDN</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <h2>6. Gestión del Consentimiento</h2>
+                <p>Al acceder por primera vez, el usuario puede:</p>
+                <ol>
+                    <li><strong>Aceptar todas:</strong> Se activan técnicas, analíticas y personalización</li>
+                    <li><strong>Rechazar:</strong> Solo cookies técnicas necesarias</li>
+                    <li><strong>Configurar:</strong> Elegir categorías específicas</li>
+                </ol>
+                <p>El consentimiento puede revocarse desde el panel de configuración de cookies.</p>
+            </section>
+            <section>
+                <h2>7. Gestión desde navegador</h2>
+                <p>El usuario puede gestionar cookies desde su navegador:</p>
+                <ul>
+                    <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+                    <li><a href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-"
+                            target="_blank">Mozilla Firefox</a></li>
+                    <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank">Apple
+                            Safari</a></li>
+                    <li><a href="https://support.microsoft.com/es-es/microsoft-edge" target="_blank">Microsoft Edge</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>8. Transferencias internacionales</h2>
+                <p>Algunos proveedores están fuera del EEE. TwinPro garantiza transferencias bajo Data Privacy Framework
+                    o Cláusulas Contractuales Tipo (SCC).</p>
+            </section>
+            <section>
+                <h2>9. Actualizaciones</h2>
+                <p>TwinPro puede modificar esta política para adaptarla a novedades legislativas o técnicas. Consulte
+                    periódicamente. Para cambios sustanciales, se notificará al usuario.</p>
+            </section>
+            <section>
+                <h2>10. Contacto</h2>
+                <div class="contact-box">
+                    <p>📩 Dudas sobre cookies o privacidad:</p><a href="mailto:legal@twinpro.app">legal@twinpro.app</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo"><img src="twinpro-logo.png" alt="TwinPro" class="logo-icon">
+                <div class="logo-text">Twin<span>Pro</span></div>
+            </div>
+            <p>© 2026 TwinPro S.L.U. Todos los derechos reservados.</p>
+            <nav><a href="/privacy">Privacidad</a><a href="/terms">Términos</a><a
+                    href="mailto:legal@twinpro.app">Contacto</a></nav>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.nav-tab').forEach(tab => { tab.addEventListener('click', function (e) { e.preventDefault(); document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active')); document.querySelectorAll('.document-section').forEach(s => s.classList.remove('active')); this.classList.add('active'); document.getElementById(this.dataset.section).classList.add('active'); window.scrollTo({ top: document.querySelector('main').offsetTop - 140, behavior: 'smooth' }) }) });
+        if (window.location.hash) { const hash = window.location.hash.substring(1); const tab = document.querySelector(`[data-section="${hash}"]`); if (tab) tab.click() }
+    </script>
+</body>
+
+</html>
